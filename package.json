@@ -1,0 +1,28 @@
+{
+  "name": "kabadiwala-connect-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart India Hackathon 2026 - Bringing informal scrap collectors into formal e-waste chain",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node scripts/dev.mjs",
+    "dev:backend": "python server/main.py",
+    "dev:collector": "npm run dev --workspace=@kabadiwala/collector",
+    "dev:recycler": "npm run dev --workspace=@kabadiwala/recycler",
+    "doctor": "node scripts/doctor.mjs",
+    "migrate": "node scripts/migrate.mjs",
+    "seed": "node scripts/seed.mjs",
+    "gen:api": "node scripts/gen-api.mjs",
+    "build": "npm run build --workspaces",
+    "test": "node scripts/test.mjs",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3"
+  }
+}

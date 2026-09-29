@@ -1,0 +1,139 @@
+{
+  "timestamp": "2026-09-28 16:23:08",
+  "metrics": {
+    "overall_accuracy": 0.9564,
+    "macro_f1": 0.9564,
+    "per_class_metrics": {
+      "PCB": {
+        "display_name": "Printed Circuit Boards (\u0938\u0930\u094d\u0915\u093f\u091f \u092c\u094b\u0930\u094d\u0921)",
+        "precision": 0.951,
+        "recall": 0.97,
+        "f1_score": 0.9604,
+        "support": 200
+      },
+      "CABLES": {
+        "display_name": "Copper Wiring / Cables (\u0924\u093e\u0902\u092c\u0947 \u0915\u0947 \u0924\u093e\u0930)",
+        "precision": 0.9366,
+        "recall": 0.96,
+        "f1_score": 0.9481,
+        "support": 200
+      },
+      "BATTERIES": {
+        "display_name": "Li-Ion / Lead Acid (\u092c\u0948\u091f\u0930\u0940)",
+        "precision": 0.9695,
+        "recall": 0.955,
+        "f1_score": 0.9622,
+        "support": 200
+      },
+      "CRT_TV": {
+        "display_name": "CRT Monitors / TVs (\u092a\u0941\u0930\u093e\u0928\u093e \u091f\u0940\u0935\u0940 / \u0938\u0940\u0906\u0930\u091f\u0940)",
+        "precision": 0.9507,
+        "recall": 0.965,
+        "f1_score": 0.9578,
+        "support": 200
+      },
+      "LCD_LED": {
+        "display_name": "Flat Screens / LCDs (\u090f\u0932\u0938\u0940\u0921\u0940 \u0938\u094d\u0915\u094d\u0930\u0940\u0928)",
+        "precision": 0.9487,
+        "recall": 0.925,
+        "f1_score": 0.9367,
+        "support": 200
+      },
+      "MOTORS_MAGNETS": {
+        "display_name": "Motors & Magnets (\u092e\u094b\u091f\u0930 / \u091a\u0941\u0902\u092c\u0915)",
+        "precision": 0.9698,
+        "recall": 0.965,
+        "f1_score": 0.9674,
+        "support": 200
+      },
+      "MIXED_PLASTICS": {
+        "display_name": "E-Waste Hard Plastics (\u0915\u0920\u094b\u0930 \u092a\u094d\u0932\u093e\u0938\u094d\u091f\u093f\u0915)",
+        "precision": 0.9695,
+        "recall": 0.955,
+        "f1_score": 0.9622,
+        "support": 200
+      }
+    },
+    "confusion_matrix": {
+      "PCB": {
+        "PCB": 194,
+        "CABLES": 5,
+        "BATTERIES": 0,
+        "CRT_TV": 0,
+        "LCD_LED": 0,
+        "MOTORS_MAGNETS": 1,
+        "MIXED_PLASTICS": 0
+      },
+      "CABLES": {
+        "PCB": 1,
+        "CABLES": 192,
+        "BATTERIES": 1,
+        "CRT_TV": 1,
+        "LCD_LED": 1,
+        "MOTORS_MAGNETS": 4,
+        "MIXED_PLASTICS": 0
+      },
+      "BATTERIES": {
+        "PCB": 4,
+        "CABLES": 1,
+        "BATTERIES": 191,
+        "CRT_TV": 0,
+        "LCD_LED": 1,
+        "MOTORS_MAGNETS": 0,
+        "MIXED_PLASTICS": 3
+      },
+      "CRT_TV": {
+        "PCB": 0,
+        "CABLES": 0,
+        "BATTERIES": 0,
+        "CRT_TV": 193,
+        "LCD_LED": 7,
+        "MOTORS_MAGNETS": 0,
+        "MIXED_PLASTICS": 0
+      },
+      "LCD_LED": {
+        "PCB": 2,
+        "CABLES": 2,
+        "BATTERIES": 2,
+        "CRT_TV": 6,
+        "LCD_LED": 185,
+        "MOTORS_MAGNETS": 1,
+        "MIXED_PLASTICS": 2
+      },
+      "MOTORS_MAGNETS": {
+        "PCB": 2,
+        "CABLES": 1,
+        "BATTERIES": 2,
+        "CRT_TV": 1,
+        "LCD_LED": 0,
+        "MOTORS_MAGNETS": 193,
+        "MIXED_PLASTICS": 1
+      },
+      "MIXED_PLASTICS": {
+        "PCB": 1,
+        "CABLES": 4,
+        "BATTERIES": 1,
+        "CRT_TV": 2,
+        "LCD_LED": 1,
+        "MOTORS_MAGNETS": 0,
+        "MIXED_PLASTICS": 191
+      }
+    }
+  },
+  "benchmarks": {
+    "model_architecture": "MobileNetV3-Small (Transfer Learned on CPCB E-Waste Dataset)",
+    "input_resolution": "224x224x3 (RGB)",
+    "parameters": "1.52 Million",
+    "fp32_size_mb": 6.12,
+    "int8_tflite_size_mb": 1.64,
+    "compression_ratio": "3.73x",
+    "target_hardware": "MediaTek Helio G25 / Qualcomm Snapdragon 460 (Ultra-budget <$80)",
+    "inference_latency_ms": {
+      "cpu_single_thread": 34.2,
+      "nnapi_accelerator": 16.8,
+      "edge_tpu": 8.4
+    },
+    "power_draw_per_scan_mah": 0.042,
+    "offline_standalone_ready": true
+  }
+}

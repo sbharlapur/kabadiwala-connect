@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24..48,400..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8faf6;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#ffdcbd", "on-tertiary": "#ffffff", "on-tertiary-container": "#ffc5bf", "outline-variant": "#bfc9bf", "on-primary-fixed": "#00210f", "on-primary-container": "#9be3b0", "on-primary-fixed-variant": "#00522c", "surface-container-high": "#e7e9e5", "on-secondary-fixed-variant": "#693c00", "secondary-fixed-dim": "#ffb86e", "surface-container-highest": "#e1e3df", "tertiary": "#8c000e", "inverse-surface": "#2e312f", "surface-container-low": "#f3f4f0", "on-tertiary-fixed-variant": "#930010", "inverse-on-surface": "#f0f1ed", "surface": "#f8faf6", "background": "#f8faf6", "on-secondary": "#ffffff", "surface-container": "#edeeeb", "on-tertiary-fixed": "#410003", "primary-container": "#20673f", "surface-container-lowest": "#ffffff", "secondary": "#8a5100", "primary-fixed": "#aaf3bf", "surface-variant": "#e1e3df", "primary-fixed-dim": "#8fd6a5", "on-error": "#ffffff", "on-primary": "#ffffff", "tertiary-fixed-dim": "#ffb3ac", "tertiary-container": "#b4151d", "on-surface-variant": "#404941", "outline": "#707a71", "error": "#ba1a1a", "error-container": "#ffdad6", "surface-bright": "#f8faf6", "inverse-primary": "#8fd6a5", "secondary-container": "#ffa02c", "on-error-container": "#93000a", "on-surface": "#191c1a", "on-secondary-fixed": "#2c1600", "on-secondary-container": "#693d00", "on-background": "#191c1a", "tertiary-fixed": "#ffdad6", "primary": "#004e2a", "surface-dim": "#d9dad7", "surface-tint": "#246b42" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "gutter-tablet": "1.5rem", "space-xs": "0.5rem", "gutter": "1rem", "margin-tablet": "2rem", "space-2xl": "3rem", "space-lg": "1.5rem", "margin": "1rem", "space-xl": "2rem", "space-sm": "0.75rem" }, fontFamily: { "label-lg": ["Noto Sans"], "headline-lg-mobile": ["Noto Sans"], "body-xl": ["Noto Sans"], "headline-md": ["Noto Sans"], "headline-lg": ["Noto Sans"], "currency-lg": ["Noto Sans"], "body-bold": ["Noto Sans"], "headline-xl-mobile": ["Noto Sans"], "label-md": ["Noto Sans"], "body-lg": ["Noto Sans"], "currency-xl": ["Noto Sans"], "headline-xl": ["Noto Sans"] }, fontSize: { "label-lg": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-xl": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "currency-lg": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "body-bold": ["18px", { "lineHeight": "26px", "fontWeight": "700" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "fontWeight": "800" }], "label-md": ["16px", { "lineHeight": "22px", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "400" }], "currency-xl": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.5px", "fontWeight": "900" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "800" }] } } } };</script></head><body class="bg-surface font-body-lg text-body-lg text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-space-md flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Go Back" class="w-12 h-12 flex-shrink-0 rounded-xl bg-surface-container flex items-center justify-center text-on-surface active:scale-95 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[28px]">arrow_back</span></button><img alt="Kabadiwala Connect Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvIgJwTMq_AyBLbzSPmGE8Jf94_je1q-K8wBxHyvRhbrymAo9sZtnGPB8k2Qrgw_yBAz0vz3SR7-QPJdPwxaN03DS2vxGfxfQwC76_FURHttS5MM3rbn9cgruZzU6IQOrf6ZDo1cGgNSnrKkupyPYq_5miTHRToFNR-IHJyguBSUlct3bY23FfBiGqazwE9RbRHSVGSJqXJ28dZWnD-cWup9h1HkoZFL2orm5fdGTY18elQ4r5uuo"/><div class="flex flex-col min-w-0"><span class="font-label-md text-[13px] text-primary-container leading-none font-bold uppercase truncate">कबाड़ीवाला Connect</span><h1 class="font-headline-md text-headline-md text-on-surface leading-tight truncate">Receipt Confirmation</h1></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Listen Audio" class="w-12 h-12 bg-primary-container text-on-primary rounded-xl flex items-center justify-center active:scale-95 transition-transform"><span class="material-symbols-outlined text-[24px]">volume_up</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-space-md pt-20 pb-safe bg-surface"><div class="flex flex-col w-full pb-8 space-y-space-md">
+<!-- Audio Readout Banner -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">campaign</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary-fixed leading-tight">सरकारी मान्यता प्राप्त खरीदार मिला</span>
+<span class="font-body-lg text-body-lg text-on-primary truncate font-medium">QR कोड दिखाएं या बोलकर कोड बताएं</span>
+</div>
+</div>
+<button aria-label="पूरा विवरण सुनें" class="w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center flex-shrink-0 active:scale-90 transition-transform shadow-md" id="mainVoiceBtn">
+<span class="material-symbols-outlined text-[32px]">volume_up</span>
+</button>
+</div>
+<!-- Top Match Card: Recommended Authorized Buyer -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col space-y-space-sm">
+<!-- Header Badges -->
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<div class="bg-primary text-on-primary px-space-sm py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md">CPCB अधिकृत</span>
+</div>
+<div class="bg-secondary-fixed text-on-secondary-fixed px-space-sm py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md">4.9 रेटिंग</span>
+</div>
+<div class="bg-primary-fixed text-on-primary-fixed px-space-sm py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+<span class="font-label-md text-label-md">मुफ़्त वैन पिकअप</span>
+</div>
+</div>
+<!-- Recycler Identity & Facility Photo -->
+<div class="flex items-start gap-space-sm pt-space-xs">
+<div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Official government certified electronic waste processing factory in India with uniformed technicians sorting clean green circuit boards under bright industrial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMHbjfCChKUMlNt-IHPvoD-z-bD8ZYmW5yg5zOG8YeKmeuWPYdtVvdH6GfiXOGKompudsKR9jah36n8iI3XYR3U-RE5kDKN9MmA3V-c1ccxsOw-Zc3IDc83VeOrj0H_vFaCrhoQC17FQfSPNlhkwKhLC2fzco1UFipC0FEdi1yK9Hwasy29XKy87xEPYkEqpbwZErLQigrViV19x4gcO40lgLfuPvq7XAZQYoQxT8rGw55SpsrPPQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">ग्रीन-टेक ई-वेस्ट रिसाइक्लर्स</h2>
+<span class="font-body-lg text-body-lg text-on-surface-variant font-medium">GreenTech Authorized Facility</span>
+<p class="font-body-lg text-body-lg text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[20px] text-primary">location_on</span>
+          1.8 किमी दूर • ओखला इंडस्ट्रियल एरिया
+        </p>
+</div>
+</div>
+<!-- Price and Payout Tile -->
+<div class="bg-secondary-fixed-dim/40 rounded-xl p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-secondary-fixed-variant">प्रस्तावित सर्वोत्तम दर:</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary font-bold">₹ 285</span>
+<span class="font-body-bold text-body-bold text-on-secondary-fixed-variant">/ किलो</span>
+</div>
+<span class="font-label-md text-[13px] text-primary font-bold">बाज़ार से +₹5 ज़्यादा</span>
+</div>
+<!-- Total Cash Highlight Box -->
+<div class="bg-secondary-container text-on-secondary-container rounded-xl px-space-md py-space-xs text-right shadow-sm">
+<span class="font-label-md text-label-md block font-medium">कुल नकद मिलना है</span>
+<span class="font-currency-xl text-currency-xl font-black block">₹ 4,417</span>
+</div>
+</div>
+</div>
+<!-- Digital Handover QR Section (Center Stage) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col items-center text-center space-y-space-md">
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-on-surface">हैंडओवर क्यूआर कोड (Handover QR)</span>
+<span class="font-body-lg text-body-lg text-on-surface-variant">रीसायकलर को स्कैन करने के लिए दिखाएं</span>
+</div>
+<!-- QR Code Surface -->
+<div class="relative bg-surface-container-lowest p-4 rounded-xl shadow-inner flex flex-col items-center justify-center">
+<!-- High contrast authentic QR SVG -->
+<svg class="w-56 h-56 text-on-surface" fill="currentColor" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<!-- Top Left Position Detection -->
+<rect height="60" rx="4" width="60" x="10" y="10"></rect>
+<rect fill="#ffffff" height="40" width="40" x="20" y="20"></rect>
+<rect height="20" width="20" x="30" y="30"></rect>
+<!-- Top Right Position Detection -->
+<rect height="60" rx="4" width="60" x="130" y="10"></rect>
+<rect fill="#ffffff" height="40" width="40" x="140" y="20"></rect>
+<rect height="20" width="20" x="150" y="30"></rect>
+<!-- Bottom Left Position Detection -->
+<rect height="60" rx="4" width="60" x="10" y="130"></rect>
+<rect fill="#ffffff" height="40" width="40" x="20" y="140"></rect>
+<rect height="20" width="20" x="30" y="150"></rect>
+<!-- Timing Patterns & Scannable Matrix Points -->
+<rect height="10" width="10" x="80" y="20"></rect>
+<rect height="10" width="10" x="100" y="20"></rect>
+<rect height="10" width="10" x="80" y="40"></rect>
+<rect height="10" width="10" x="110" y="40"></rect>
+<rect height="10" width="10" x="90" y="55"></rect>
+<rect height="10" width="10" x="20" y="80"></rect>
+<rect height="10" width="10" x="40" y="80"></rect>
+<rect height="10" width="10" x="60" y="80"></rect>
+<rect height="10" width="10" x="20" y="100"></rect>
+<rect height="10" width="10" x="50" y="100"></rect>
+<!-- Center data clusters -->
+<rect height="15" width="15" x="80" y="80"></rect>
+<rect height="15" width="15" x="105" y="80"></rect>
+<rect height="15" width="15" x="80" y="105"></rect>
+<rect height="15" width="15" x="105" y="105"></rect>
+<!-- Bottom Right Matrix Cluster -->
+<rect height="10" width="10" x="130" y="90"></rect>
+<rect height="10" width="10" x="150" y="90"></rect>
+<rect height="10" width="10" x="170" y="90"></rect>
+<rect height="10" width="10" x="140" y="110"></rect>
+<rect height="10" width="10" x="160" y="110"></rect>
+<rect height="10" width="10" x="180" y="110"></rect>
+<rect height="10" width="20" x="130" y="130"></rect>
+<rect height="20" width="10" x="160" y="130"></rect>
+<rect height="10" width="10" x="180" y="140"></rect>
+<rect height="10" width="10" x="130" y="160"></rect>
+<rect height="10" width="20" x="150" y="160"></rect>
+<rect height="20" width="10" x="180" y="170"></rect>
+<rect height="10" width="10" x="140" y="180"></rect>
+<rect height="10" width="10" x="160" y="180"></rect>
+<!-- Central Trust Badge -->
+<circle cx="100" cy="100" fill="#004e2a" r="16"></circle>
+<path d="M96 100 L99 103 L105 97" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<!-- 4-Digit Security Code Readout -->
+<div class="bg-surface-container w-full rounded-xl py-space-sm px-space-md flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface-variant">अगर स्कैनर काम न करे तो कोड बोलें:</span>
+<div class="flex items-center justify-center gap-space-md my-space-xs">
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface bg-surface-container-lowest px-4 py-1 rounded-lg shadow-sm">8</span>
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface bg-surface-container-lowest px-4 py-1 rounded-lg shadow-sm">8</span>
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface bg-surface-container-lowest px-4 py-1 rounded-lg shadow-sm">4</span>
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface bg-surface-container-lowest px-4 py-1 rounded-lg shadow-sm">2</span>
+</div>
+<span class="font-body-lg text-body-lg text-primary font-bold">सुरक्षा कोड: आठ - आठ - चार - दो</span>
+</div>
+<!-- Live Scan Status Indicator -->
+<div class="w-full bg-secondary-fixed text-on-secondary-fixed py-space-xs px-space-md rounded-xl flex items-center justify-center gap-space-xs transition-colors" id="liveStatusContainer">
+<span class="w-3.5 h-3.5 rounded-full bg-secondary-container animate-pulse" id="statusBeacon"></span>
+<span class="font-body-bold text-body-bold" id="statusLabel">रीसायकलर का इंतज़ार है (Waiting for scan...)</span>
+</div>
+</div>
+<!-- Payment Mode Selection (Cash prioritized) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">भुगतान कैसे लेंगे? (Payment Mode)</span>
+<span class="font-label-md text-label-md text-primary font-bold">तुरंत भुगतान</span>
+</div>
+<div class="grid grid-cols-1 gap-space-xs pt-1">
+<!-- Option 1: Cash First -->
+<button class="w-full min-h-[64px] bg-primary text-on-primary rounded-xl px-space-md py-space-xs flex items-center justify-between text-left shadow-sm active:scale-[0.99] transition-transform" id="optCash" onclick="selectPaymentMode('cash')">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center flex-shrink-0 text-[26px]">
+            💵
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md leading-tight">नकद भुगतान (Cash on Handover)</span>
+<span class="font-body-lg text-body-lg text-primary-fixed opacity-95">हाथों-हाथ पूरी नकदी प्राप्त करें</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center flex-shrink-0" id="radioCash">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</button>
+<!-- Option 2: Bank / UPI -->
+<button class="w-full min-h-[64px] bg-surface-container text-on-surface rounded-xl px-space-md py-space-xs flex items-center justify-between text-left active:scale-[0.99] transition-transform" id="optBank" onclick="selectPaymentMode('bank')">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center flex-shrink-0 text-[24px]">
+            🏦
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-md text-headline-md leading-tight">UPI / बैंक खाता (Bank Transfer)</span>
+<span class="font-body-lg text-body-lg text-on-surface-variant">सीधे खाते में तुरंत जमा</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-surface-container-highest flex items-center justify-center flex-shrink-0" id="radioBank">
+<span class="material-symbols-outlined text-[20px]">circle</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Verifiable Handover Details Summary -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">सामग्री एवं लॉट विवरण (Lot Details)</span>
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container px-2 py-1 rounded">लॉट ID: #KW-8842</span>
+</div>
+<!-- Key Attributes Grid -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">memory</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant">सामग्री</span>
+<span class="font-body-bold text-body-bold text-on-surface truncate">सर्किट बोर्ड</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">scale</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant">वजन</span>
+<span class="font-body-bold text-body-bold text-on-surface">15.5 kg</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">pin_drop</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant">GPS ऑटो स्थान</span>
+<span class="font-body-bold text-body-bold text-on-surface truncate">ओखला (28.5355° N)</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant">समय</span>
+<span class="font-body-bold text-body-bold text-on-surface">आज, 02:45 PM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Audio Help & Direct Call Action Buttons -->
+<div class="grid grid-cols-2 gap-space-xs">
+<a class="min-h-[58px] bg-surface-container-highest text-on-surface rounded-xl px-space-sm py-2 flex items-center justify-center gap-space-xs active:scale-95 transition-transform shadow-sm" href="tel:1800112233">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+<span class="font-body-bold text-body-bold text-left leading-tight">रीसायकलर कॉल<br/><span class="font-label-md text-label-md text-on-surface-variant">Call Buyer</span></span>
+</a>
+<button class="min-h-[58px] bg-secondary-fixed text-on-secondary-fixed rounded-xl px-space-sm py-2 flex items-center justify-center gap-space-xs active:scale-95 transition-transform shadow-sm" id="readAloudSlipBtn">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<span class="font-body-bold text-body-bold text-left leading-tight">पूरा विवरण सुनें<br/><span class="font-label-md text-label-md text-on-secondary-fixed-variant">Audio Slip</span></span>
+</button>
+</div>
+<!-- Primary Bottom Action Button -->
+<div class="pt-space-xs">
+<button class="w-full min-h-[62px] bg-primary-container text-on-primary rounded-xl px-space-md py-space-sm flex items-center justify-center gap-space-sm shadow-lg active:scale-[0.98] transition-transform" id="confirmHandoverBtn">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-headline-md text-headline-md tracking-wide">हैंडओवर पक्का करें (Confirm Slip)</span>
+</button>
+</div>
+<!-- Audio Speech Notification Modal / Toast (Simulated Audio Feedback) -->
+<div class="fixed bottom-6 inset-x-4 max-w-md mx-auto bg-inverse-surface text-inverse-on-surface p-space-md rounded-xl shadow-2xl flex items-center justify-between gap-space-sm z-50 transform translate-y-32 transition-transform duration-300" id="audioToast">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[24px]">graphic_eq</span>
+</div>
+<p class="font-body-bold text-body-bold truncate" id="audioToastText">ऑडियो बोलकर सुनाया जा रहा है...</p>
+</div>
+<button class="p-1 rounded-full text-inverse-on-surface active:scale-90" onclick="dismissAudioToast()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  let selectedMode = 'cash';
+
+  function selectPaymentMode(mode) {
+    selectedMode = mode;
+    const optCash = document.getElementById('optCash');
+    const optBank = document.getElementById('optBank');
+    const radioCash = document.getElementById('radioCash');
+    const radioBank = document.getElementById('radioBank');
+
+    if (mode === 'cash') {
+      optCash.className = 'w-full min-h-[64px] bg-primary text-on-primary rounded-xl px-space-md py-space-xs flex items-center justify-between text-left shadow-sm active:scale-[0.99] transition-transform';
+      radioCash.className = 'w-8 h-8 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center flex-shrink-0';
+      radioCash.innerHTML = '<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: \'FILL\' 1;">check</span>';
+
+      optBank.className = 'w-full min-h-[64px] bg-surface-container text-on-surface rounded-xl px-space-md py-space-xs flex items-center justify-between text-left active:scale-[0.99] transition-transform';
+      radioBank.className = 'w-8 h-8 rounded-full bg-surface-container-highest text-surface-container-highest flex items-center justify-center flex-shrink-0';
+      radioBank.innerHTML = '<span class="material-symbols-outlined text-[20px]">circle</span>';
+      
+      triggerAudioSpeak('नकद भुगतान चुना गया। रीसायकलर से चार हजार चार सौ सत्रह रुपये नकद लें।');
+    } else {
+      optBank.className = 'w-full min-h-[64px] bg-primary text-on-primary rounded-xl px-space-md py-space-xs flex items-center justify-between text-left shadow-sm active:scale-[0.99] transition-transform';
+      radioBank.className = 'w-8 h-8 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center flex-shrink-0';
+      radioBank.innerHTML = '<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: \'FILL\' 1;">check</span>';
+
+      optCash.className = 'w-full min-h-[64px] bg-surface-container text-on-surface rounded-xl px-space-md py-space-xs flex items-center justify-between text-left active:scale-[0.99] transition-transform';
+      radioCash.className = 'w-8 h-8 rounded-full bg-surface-container-highest text-surface-container-highest flex items-center justify-center flex-shrink-0';
+      radioCash.innerHTML = '<span class="material-symbols-outlined text-[20px]">circle</span>';
+      
+      triggerAudioSpeak('बैंक खाता या UPI चुना गया। राशि सीधे आपके खाते में भेजी जाएगी।');
+    }
+  }
+
+  function triggerAudioSpeak(message) {
+    const toast = document.getElementById('audioToast');
+    const toastText = document.getElementById('audioToastText');
+    if (!toast || !toastText) return;
+    
+    toastText.innerText = message;
+    toast.classList.remove('translate-y-32');
+    
+    // Web Speech API if supported
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(message);
+      utterance.lang = 'hi-IN';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    setTimeout(() => {
+      dismissAudioToast();
+    }, 4500);
+  }
+
+  function dismissAudioToast() {
+    const toast = document.getElementById('audioToast');
+    if (toast) toast.classList.add('translate-y-32');
+  }
+
+  // Hook audio listeners
+  document.getElementById('mainVoiceBtn')?.addEventListener('click', () => {
+    triggerAudioSpeak('सरकारी मान्यता प्राप्त रीसायकलर: ग्रीन-टेक। दर दो सौ पचासी रुपये प्रति किलो। कुल नकद चार हजार चार सौ सत्रह रुपये। क्यूआर कोड दिखाएं।');
+  });
+
+  document.getElementById('readAloudSlipBtn')?.addEventListener('click', () => {
+    triggerAudioSpeak('लॉट नंबर आठ आठ चार दो। सर्किट बोर्ड पंद्रह दशमलव पांच किलो। स्थान ओखला। सुरक्षा कोड आठ आठ चार दो।');
+  });
+
+  // Simulated scan verification demo after 4 seconds
+  setTimeout(() => {
+    const statusContainer = document.getElementById('liveStatusContainer');
+    const statusBeacon = document.getElementById('statusBeacon');
+    const statusLabel = document.getElementById('statusLabel');
+
+    if (statusContainer && statusBeacon && statusLabel) {
+      statusContainer.className = 'w-full bg-primary-fixed text-on-primary-fixed py-space-xs px-space-md rounded-xl flex items-center justify-center gap-space-xs transition-colors';
+      statusBeacon.className = 'w-3.5 h-3.5 rounded-full bg-primary flex items-center justify-center text-on-primary';
+      statusBeacon.innerHTML = '<span class="material-symbols-outlined text-[14px]">done</span>';
+      statusLabel.innerHTML = 'रीसायकलर ने स्कैन कर लिया है! (Scanned by GreenTech)';
+      statusLabel.className = 'font-body-bold text-body-bold text-on-primary-fixed';
+      
+      triggerAudioSpeak('रीसायकलर ने कोड स्कैन कर लिया है। कृपया भुगतान प्राप्त कर रसीद पक्की करें।');
+    }
+  }, 5000);
+
+  // Confirm Handover Action
+  document.getElementById('confirmHandoverBtn')?.addEventListener('click', () => {
+    triggerAudioSpeak('हैंडओवर सफलतापूर्वक संपन्न हुआ। आपकी डिजिटल रसीद जारी हो गई है।');
+    const btn = document.getElementById('confirmHandoverBtn');
+    btn.innerHTML = '<span class="material-symbols-outlined text-[30px]">task_alt</span><span class="font-headline-md text-headline-md">सत्यापित एवं सुरक्षित! (Done)</span>';
+    btn.classList.remove('bg-primary-container');
+    btn.classList.add('bg-primary');
+  });
+</script></main></body></html>
